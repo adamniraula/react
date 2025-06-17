@@ -1,13 +1,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Header   from './components/Header';
-import Footer   from './components/Footer';
-import Home     from './pages/Home';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
 import Products from './pages/Products';
 import Developers from './pages/Developers';
-import Community  from './pages/Community';
-import Support    from './pages/Support';
-import About      from './pages/About';
+import Community from './pages/Community';
+import Support from './pages/Support';
+import About from './pages/About';
+import ContactForm from './components/ContactForm';
 
 export default function App() {
   return (
@@ -15,12 +16,13 @@ export default function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/"          element={<Home/>} />
-          <Route path="/products"  element={<Products/>}/>
-          <Route path="/developers"element={<Developers/>}/>
-          <Route path="/community" element={<Community/>}/>
-          <Route path="/support"   element={<Support/>}/>
-          <Route path="/about"     element={<About/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/developers" element={<Developers />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/ContactForm" element={<ContactForm />} />
         </Routes>
       </main>
       <Footer />

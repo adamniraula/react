@@ -319,6 +319,7 @@
   /* ==========================
      SUPPORT PAGE
      ========================== */
+  /* Use a slightly different header style */
   .support-header {
     background: var(--primary);
   }
@@ -350,7 +351,6 @@
     border: none;
     border-radius: 999px;
     font-size: 1rem;
-    margin-bottom: 1rem;
   }
   .support-cards {
     display: flex;
@@ -384,7 +384,6 @@
     align-items: center;
     gap: var(--gap);
     margin: var(--gap) 0;
-    justify-content: center;
   }
   .rotated-label {
     writing-mode: vertical-rl;
@@ -394,8 +393,7 @@
     color: var(--text);
   }
   .hero-image {
-    flex: none;
-    max-width: 600px;
+    flex: 1;
   }
   .hero-image img {
     width: 100%;
@@ -456,12 +454,10 @@
     text-align: right;
     color: var(--text);
   }
-  .detail-model img {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    display: block;
-    margin: 0 auto;
+  .detail-model h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: bold;
   }
   
   /* ==========================
@@ -472,38 +468,6 @@
     text-align: center;
     padding: var(--gap) 0;
     color: var(--text);
-  }
-  
-  /* ==========================
-     LINKS SECTION (Home page)
-     ========================== */
-  .links {
-    margin-top: 2rem;
-    padding: var(--gap);
-    background: var(--muted);
-    border-radius: 8px;
-  }
-  .links h3 {
-    color: var(--text);
-    margin-bottom: var(--gap);
-  }
-  .links ul {
-    list-style: none;
-    padding: 0;
-  }
-  .links li {
-    margin: 0.5rem 0;
-  }
-  .links a {
-    text-decoration: none;
-    color: var(--primary);
-    padding: 0.5rem 1rem;
-    background: rgba(118, 185, 0, 0.1);
-    border-radius: 4px;
-    display: inline-block;
-  }
-  .links a:hover {
-    background: rgba(118, 185, 0, 0.3);
   }
   
   /* ==========================
@@ -520,8 +484,7 @@
     .features,
     .developers-grid,
     .community-grid,
-    .support-cards,
-    .links ul {
+    .support-cards {
       gap: 0.5rem;
     }
   }
@@ -588,7 +551,7 @@
       flex-direction: column;
     }
   
-    /* Collapse about-hero to vertical */
+    /* Collapse about‐hero to vertical */
     .about-hero {
       flex-direction: column;
       text-align: center;
@@ -640,15 +603,16 @@
     height: auto;
   }
   
+  
   /* ============================
      Restrict Preview Image Size
      ============================ */
   .detail-model img {
     width: 100%;
     height: auto;
-    max-width: 400px;
+    max-width: 400px;   
     display: block;
-    margin: 0 auto;
+    margin: 0 auto;     
   }
   
   .support-banner {
@@ -668,13 +632,14 @@
   .about-hero .hero-image {
     flex: none;
     /* Optional: constrain how wide the image can get */
-    max-width: 600px;
+    max-width: 600px; 
   }
+  
   
   /* ============================
      Contact us
      ============================ */
-  .contact-form {
+     .contact-form {
     background: var(--muted);
     color: var(--text);
     border-radius: 16px;
@@ -684,8 +649,6 @@
     gap: var(--gap);
     max-width: 500px;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
   
   .contact-form label {
@@ -731,65 +694,4 @@
     font-style: italic;
     color: green;
   }
-  /* ==========================
-   CONTACT FORM RESPONSIVE
-   ========================== */
-.form-group {
-  margin-bottom: var(--gap);
-}
-
-.contact-form {
-  width: 100%;
-  max-width: 500px; /* Matches existing max-width */
-}
-
-.contact-form label {
-  width: 100%;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%; /* Ensure full width on all screens */
-  box-sizing: border-box; /* Include padding in width calculation */
-}
-
-.contact-form button {
-  width: 100%; /* Full width button for mobile */
-  margin-top: var(--gap);
-}
-
-.contact-form .status {
-  text-align: center;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .contact-form {
-    padding: 0.5rem; /* Reduce padding on smaller screens */
-  }
-
-  .contact-form label {
-    font-size: 0.9rem; /* Slightly smaller text for mobile */
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    padding: 0.5rem; /* Adjust padding for smaller screens */
-    font-size: 0.9rem;
-  }
-
-  .contact-form button {
-    padding: 0.75rem; /* Adjust button padding */
-  }
-}
-
-@media (max-width: 480px) {
-  .contact-form {
-    max-width: 100%; /* Full width on very small screens */
-    padding: 0.25rem;
-  }
-
-  .contact-form .form-group {
-    margin-bottom: 0.5rem; /* Tighter spacing on very small screens */
-  }
-}
+  

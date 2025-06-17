@@ -36,6 +36,7 @@ export default function Header() {
             <li><NavLink to="/community">Community</NavLink></li>
             <li><NavLink to="/support">Support</NavLink></li>
             <li><NavLink to="/about">About Us</NavLink></li>
+            <li><NavLink to="/ContactForm">Contact Us</NavLink></li>
           </ul>
         </nav>
       </div>

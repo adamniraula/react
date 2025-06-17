@@ -1,0 +1,78 @@
+/* src/styles/global.css */
+
+/* Box-model reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base HTML/body */
+html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #121212;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Utility container */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+/* Headings & paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+ul, ol {
+  list-style: none;
+}
+
+/* Images & media */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Links & buttons */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, .button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }

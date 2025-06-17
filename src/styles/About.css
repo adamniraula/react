@@ -1,0 +1,32 @@
+.about-hero {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  margin: var(--gap) 0;
+}
+.rotated-label {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--text);
+}
+.hero-image {
+  flex: 1;
+}
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+.about-text-content {
+  background: var(--muted);
+  color: var(--text);
+  border-radius: 16px;
+  padding: var(--gap);
+  margin-bottom: var(--gap);
+}
+.about-text-content p {
+  margin-bottom: var(--gap);
+}
+

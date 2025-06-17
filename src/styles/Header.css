@@ -1,0 +1,23 @@
+
+/* at the top you already have: */
+:root {
+  --primary: #76B900;
+  /* … */
+}
+
+/* Replace your old header rule with: */
+.site-header {
+  background: var(--primary);       /* green background */
+  border-bottom: 1px solid var(--muted); /* keep that dark divider line if you like */
+}
+
+/* Make sure your logo/title/nav text is visible on green: */
+.site-header .site-title,
+.site-nav .nav-list li a {
+  color: #fff;         /* white text */
+}
+
+/* (Optional) If you had active-link styling: */
+.site-nav .nav-list li a.active {
+  color: #000;         /* or whatever highlight color you prefer */
+}

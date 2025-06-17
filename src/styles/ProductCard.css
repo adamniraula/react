@@ -1,0 +1,9 @@
+.product-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.product-card img {
+  max-width: 100%;
+  border-radius: 4px;
+}

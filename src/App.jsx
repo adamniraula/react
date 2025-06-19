@@ -9,7 +9,7 @@ import Community from './pages/Community';
 import Support from './pages/Support';
 import About from './pages/About';
 import ContactForm from './components/ContactForm';
-
+import ProductDetail from './pages/ProductDetail';
 export default function App() {
   return (
     <>
@@ -23,6 +23,7 @@ export default function App() {
           <Route path="/support" element={<Support />} />
           <Route path="/about" element={<About />} />
           <Route path="/ContactForm" element={<ContactForm />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
         </Routes>
       </main>
       <Footer />

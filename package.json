@@ -2,9 +2,11 @@
   "name": "nvidia-pulse-react",
   "version": "1.0.0",
   "private": true,
+  "homepage": "/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "serve": "serve -s build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

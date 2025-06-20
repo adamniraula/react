@@ -14,8 +14,7 @@ export default function ProductDetail() {
       setLoading(true);
       setError('');
       try {
-        // console.log(`http://localhost:3001/api/products/${id}`);
-        const res = await axios.get(`http://localhost:3001/api/products/${id}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/products/${id}`);
         setProduct(res.data);
       } catch (err) {
         setError('Product not found.');
@@ -52,7 +51,7 @@ export default function ProductDetail() {
         </div>
         <div className="detail-model">
           <img
-            src={`http://localhost:3001${product.image}`}
+            src={`${process.env.REACT_APP_API_URL}${product.image}`}
             alt={product.name}
             style={{ maxWidth: 400, borderRadius: 16 }}
           />

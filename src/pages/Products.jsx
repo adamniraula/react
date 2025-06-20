@@ -11,7 +11,7 @@ export default function Products() {
   const [editProduct, setEditProduct] = useState(null);
   const [message, setMessage] = useState('');
 
-  const API = 'http://localhost:3001/api/products';
+  const API = `${process.env.REACT_APP_API_URL}/api/products`;
 
   const fetchProducts = async () => {
     setLoading(true);
@@ -107,7 +107,7 @@ export default function Products() {
             products.map(product => (
               <ProductCard
                 id={product._id}
-                image={`http://localhost:3001${product.image}`}
+                image={`${process.env.REACT_APP_API_URL}${product.image}`}
                 name={product.name}
                 description={product.description}
                 price={`$${product.price}`}
